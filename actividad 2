@@ -1,0 +1,41 @@
+package Actividad;
+
+import java.util.Scanner;
+
+public class Nacimiento {
+    public static void main (String[] args){
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ingrese su nombre");
+        String nombre = scanner.nextLine();
+        System.out.println("Ingrese su edad");
+        int edad = scanner.nextInt();
+        System.out.println("Ingrese su nacionalidad");
+        String nacionalidad = scanner.nextLine();
+        System.out.println("Ingrese su Ocupación");
+        String ocupacion = scanner.nextLine();
+        System.out.println("Ingrese su salario");
+        double salario = scanner.nextDouble();
+
+
+
+
+        int year = 2025;
+        int anoNacimiento = edad-year;
+
+        System.out.println("su año de nacimiento es: "+ anoNacimiento);
+
+        ///perfil
+
+        System.out.println("Nombre :" + nombre);
+        System.out.println("Edad :" + edad);
+        System.out.println("Nacionalidad :" + nacionalidad);
+        System.out.println("Ocupación :" + ocupacion);
+        System.out.println("Salario :" + salario);
+        System.out.println("Año de nacimiento" + anoNacimiento);
+
+
+        scanner.close();
+    }
+}
