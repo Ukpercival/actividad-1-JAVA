@@ -1,0 +1,29 @@
+package Actividad;
+
+import java.util.Scanner;
+
+public class Promedio {
+    public static void main(String[] args){
+
+        Scanner scanner = new Scanner(System.in);
+
+        int suma = 0;
+
+        System.out.print("Ingrese la nota 1: ");
+        int nota1 = scanner.nextInt();
+        suma += nota1;
+
+        System.out.print("Ingrese la nota 2: ");
+        int nota2 = scanner.nextInt();
+        suma += nota2;
+
+        System.out.print("Ingrese la nota 3: ");
+        int nota3 = scanner.nextInt();
+        suma += nota3;
+
+        double promedio = suma / 3.0;
+        System.out.println("El promedio es: " + promedio);
+
+        scanner.close();
+    }
+}
